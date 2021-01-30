@@ -5,6 +5,7 @@
 + **Phone number:** +(998) 90 986-81-41
 + **Telegram:** [@Aziz151002](https://t.me//Aziz151002) or phone number
 + **E-mail:** aziz.abdurahimov151002@gmail.com
+
 ---
 
 ## **About Me**
@@ -22,5 +23,6 @@ Love reading books and programming.
 4. Bootstrap
 5. Javascript
 6. Git/GitHub
-7. Responsive slayouts
+7. Responsive layouts
+
 ---
