@@ -26,3 +26,37 @@ Love reading books and programming.
 7. Responsive layouts
 
 ---
+
+## **Code Samples**
+Javacript code:
+
+
+```Javacript
+burger.addEventListener('click', e => {
+	e.stopPropagation();
+	toggleClass();
+});
+```
+
+---
+
+## **Experience**
+
+1. [Business Agency website](https://abdurakhimovaziz.github.io/agency_business/)
+2. [Simple Tribute Page](https://abdurakhimovaziz.github.io/tribute-page/)
+3. [Bycicle website](https://abdurakhimovaziz.github.io/yoyo_bycicle/)
+
+---
+
+## **Education**
+* Inha University in Tashkent (2020-2024)
+* Freecodecamp
+* Udemy (web-developer bootcamp, javascript from novice to ninja)
+* Coursera (html css and js for web developers)
+* Udacity (fullstack web developer)
+
+---
+
+## **English**
+
+B2 (Upper Intermediate)
