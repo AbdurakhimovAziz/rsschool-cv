@@ -1,6 +1,7 @@
 :root {
   --primary-color: #454b53;
   --secondary-color: #4a89dc;
+  --ease-out-back: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 *,
@@ -14,6 +15,16 @@ ul,
 ol {
   list-style: none;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
 a {
   text-decoration: none;
   color: var(--primary-color);
@@ -24,20 +35,20 @@ body {
   height: 100vh;
   background-color: #f5f7fa;
   font-family: 'Poppins', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
 }
 
 .wrapper {
   display: flex;
   flex-direction: column;
-  max-width: 1240px;
+  max-width: 1210px;
   width: 100%;
   height: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .header {
@@ -82,13 +93,13 @@ body {
 .menu-list-item:before {
   opacity: 0;
   transform: translateY(-8px);
-  transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s;
+  transition: transform 0s var(--ease-out-back), opacity 0s;
 }
 
 .menu-list-item:after {
   opacity: 0;
   transform: translateY(8px/2);
-  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
+  transition: transform 0.2s var(--ease-out-back), opacity 0.2s;
 }
 
 .menu-list-item:hover::after,
@@ -99,10 +110,10 @@ body {
   transform: translateY(0);
 }
 .menu-list-item:hover::before {
-  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
+  transition: transform 0.2s var(--ease-out-back), opacity 0.2s;
 }
 .menu-list-item:hover::after {
-  transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s 0.2s;
+  transition: transform 0s 0.2s var(--ease-out-back), opacity 0s 0.2s;
 }
 
 .content {
@@ -112,8 +123,8 @@ body {
 }
 
 .container {
-  max-width: 1140px;
-  padding: 0 15px;
+  max-width: 1110px;
+  padding: 0 30px;
   margin: 0 auto;
 }
 
@@ -136,7 +147,7 @@ body {
 .info-img {
   width: 200px;
   height: 200px;
-  margin-right: 150px;
+  margin-right: 100px;
   border-radius: 50%;
   background-color: #fff;
   object-fit: cover;
@@ -153,4 +164,34 @@ body {
   font-size: 20px;
   line-height: 1.2;
   font-weight: 300;
+}
+
+.about {
+  padding: 50px 0;
+}
+
+.heading {
+  font-size: 30px;
+  color: var(--primary-color);
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  margin-bottom: 30px;
+}
+
+.skills {
+  padding: 50px 0;
+}
+
+.skills-list {
+  list-style: disc inside;
+}
+
+.skills-list li {
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+
+.skills-list li::marker {
+  color: var(--secondary-color);
 }
