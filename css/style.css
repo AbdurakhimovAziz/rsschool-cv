@@ -33,10 +33,11 @@ a {
 body {
   width: 100%;
   height: 100vh;
-  background-color: #f5f7fa;
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
   font-weight: 400;
+  color: var(--primary-color);
+  background-color: #f5f7fa;
 }
 
 .wrapper {
@@ -131,7 +132,7 @@ body {
 .info {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  padding: 20px 0;
+  padding: 40px 0;
   background-color: var(--secondary-color);
 }
 
@@ -172,26 +173,75 @@ body {
 
 .heading {
   font-size: 30px;
-  color: var(--primary-color);
   font-weight: 700;
   text-transform: uppercase;
-  padding-bottom: 5px;
+  padding-bottom: 8px;
   margin-bottom: 30px;
+}
+.heading::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 3px;
+  border-radius: 5px;
+  background-color: var(--secondary-color);
 }
 
 .skills {
   padding: 50px 0;
 }
 
-.skills-list {
+.list {
   list-style: disc inside;
+  margin-bottom: 50px;
 }
 
-.skills-list li {
+.list li {
   padding-left: 30px;
   margin-bottom: 10px;
 }
 
-.skills-list li::marker {
+.list li::marker {
   color: var(--secondary-color);
+}
+
+.subheading {
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.code {
+  background-color: #eeeeee;
+  border-radius: 3px;
+}
+.code-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.experience {
+  padding: 50px 0;
+}
+
+.projects-title {
+  margin: 30px 0 10px;
+}
+
+.projects {
+  padding-left: 30px;
+  list-style: decimal;
+}
+.projects li {
+  margin-bottom: 10px;
+}
+
+.projects-link {
+  color: var(--secondary-color);
+  transition: color 0.3s ease-out;
+}
+
+.projects-link:hover,
+.projects-link:active,
+.projects-link:visited {
+  color: rgba(29, 67, 116, 0.9);
 }
