@@ -45,8 +45,7 @@ No working/commercial experience
 
 Some educational projects:
 1. [Business Agency website](https://abdurakhimovaziz.github.io/agency_business/)
-2. [Simple Tribute Page](https://abdurakhimovaziz.github.io/tribute-page/)
-3. [Bycicle website](https://abdurakhimovaziz.github.io/yoyo_bycicle/)
+2. [Bycicle website](https://abdurakhimovaziz.github.io/yoyo_bycicle/)
 
 ---
 

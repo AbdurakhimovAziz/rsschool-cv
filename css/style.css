@@ -52,6 +52,14 @@ body {
   padding-right: 30px;
 }
 
+.about,
+.skills,
+.experience,
+.education,
+.contacts {
+  padding: 50px 0;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -167,10 +175,6 @@ body {
   font-weight: 300;
 }
 
-.about {
-  padding: 50px 0;
-}
-
 .heading {
   font-size: 30px;
   font-weight: 700;
@@ -185,10 +189,6 @@ body {
   height: 3px;
   border-radius: 5px;
   background-color: var(--secondary-color);
-}
-
-.skills {
-  padding: 50px 0;
 }
 
 .list {
@@ -219,10 +219,6 @@ body {
   margin-bottom: 10px;
 }
 
-.experience {
-  padding: 50px 0;
-}
-
 .projects-title {
   margin: 30px 0 10px;
 }
@@ -235,13 +231,18 @@ body {
   margin-bottom: 10px;
 }
 
-.projects-link {
+.link {
   color: var(--secondary-color);
   transition: color 0.3s ease-out;
 }
 
-.projects-link:hover,
-.projects-link:active,
-.projects-link:visited {
-  color: rgba(29, 67, 116, 0.9);
+.link:hover,
+.link:active,
+.link:visited {
+  color: #0058cc;
+}
+
+.contacts-item span {
+  font-weight: 700;
+  margin-right: 5px;
 }
