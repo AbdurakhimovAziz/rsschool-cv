@@ -14,51 +14,49 @@
         <a href="#" class="name">Aziz Abdurakhimov</a>
         <nav class="menu">
           <ul class="menu-list">
-            <li class="menu-list-item"><a href="#" class="menu-list-link">About me</a></li>
-            <li class="menu-list-item"><a href="#" class="menu-list-link">Skills</a></li>
-            <li class="menu-list-item"><a href="#" class="menu-list-link">Experience</a></li>
-            <li class="menu-list-item"><a href="#" class="menu-list-link">Education</a></li>
-            <li class="menu-list-item"><a href="#" class="menu-list-link">Contacts</a></li>
+            <li class="menu-list-item"><a href="#about" class="menu-list-link">About me</a></li>
+            <li class="menu-list-item"><a href="#skills" class="menu-list-link">Skills</a></li>
+            <li class="menu-list-item"><a href="#experience" class="menu-list-link">Experience</a></li>
+            <li class="menu-list-item"><a href="#education" class="menu-list-link">Education</a></li>
+            <li class="menu-list-item"><a href="#contacts" class="menu-list-link">Contacts</a></li>
           </ul>
         </nav>
       </header>
       <main class="content">
-        <section class="info">
+        <section id="info" class="info">
           <div class="container">
             <div class="info-inner">
               <img src="img/main-img.jpg" alt="avatar photo" class="info-img" />
               <div class="info-content">
                 <h1 class="info-title">Aziz Abdurakhimov</h1>
                 <p class="info-text">Frontend developer</p>
-                <nav class="social">
-                  <ul class="social-list info-social">
-                    <li>
-                      <a href="" class="social-link">
-                        <svg><use href="img/icon.svg#github"></use></svg>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="" class="social-link">
-                        <svg><use href="img/icon.svg#telegram"></use></svg>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="" class="social-link">
-                        <svg><use href="img/icon.svg#gmail"></use></svg>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="" class="social-link">
-                        <svg><use href="img/icon.svg#phone"></use></svg>
-                      </a>
-                    </li>
-                  </ul>
-                </nav>
+                <ul class="social info-social">
+                  <li>
+                    <a href="https://github.com/AbdurakhimovAziz" class="social-link" target="blank">
+                      <svg><use href="img/icon.svg#github"></use></svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://t.me//Aziz151002" class="social-link" target="blank">
+                      <svg><use href="img/icon.svg#telegram"></use></svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="mailto:aziz.abdurahimov151002@gmail.com" class="social-link">
+                      <svg><use href="img/icon.svg#gmail"></use></svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="tel:+998909868141" class="social-link">
+                      <svg><use href="img/icon.svg#phone"></use></svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </section>
-        <section class="about">
+        <section id="about" class="about">
           <div class="container">
             <h2 class="heading">About me</h2>
             <p>
@@ -68,7 +66,7 @@
             </p>
           </div>
         </section>
-        <section class="skills">
+        <section id="skills" class="skills">
           <div class="container">
             <h2 class="heading">My skills</h2>
             <ul class="list">
@@ -91,7 +89,7 @@
             </article>
           </div>
         </section>
-        <section class="experience">
+        <section id="experience" class="experience">
           <div class="container">
             <h2 class="heading">Experience</h2>
             <p>No working/commercial experience</p>
@@ -102,7 +100,7 @@
             </ol>
           </div>
         </section>
-        <section class="education">
+        <section id="education" class="education">
           <div class="container">
             <h2 class="heading">Education</h2>
             <ul class="list">
@@ -114,12 +112,15 @@
             </ul>
           </div>
         </section>
-        <section class="contacts">
+        <section id="contacts" class="contacts">
           <div class="container">
             <h2 class="heading">contacts</h2>
             <ul class="list">
               <li class="contacts-item"><span>Phone number:</span> <a class="link" href="tel:+998909868141">+(998) 90 986-81-41</a></li>
-              <li class="contacts-item"><span>Telegram:</span><a class="link" href="https://t.me//Aziz151002">@Aziz151002</a> or phone number</li>
+              <li class="contacts-item">
+                <span>Telegram:</span><a class="link" href="https://t.me//Aziz151002" target="blank">@Aziz151002</a>
+                or phone number
+              </li>
               <li class="contacts-item">
                 <span>E-mail:</span> <a class="link" href="mailto:aziz.abdurahimov151002@gmail.com">aziz.abdurahimov151002@gmail.com</a>
               </li>
@@ -130,30 +131,28 @@
       <footer class="footer">
         <div class="container">
           <h3 class="name">Aziz Abdurakhimov</h3>
-          <nav class="social">
-            <ul class="social-list">
-              <li>
-                <a href="" class="social-link">
-                  <svg><use href="img/icon.svg#github"></use></svg>
-                </a>
-              </li>
-              <li>
-                <a href="" class="social-link">
-                  <svg><use href="img/icon.svg#telegram"></use></svg>
-                </a>
-              </li>
-              <li>
-                <a href="" class="social-link">
-                  <svg><use href="img/icon.svg#gmail"></use></svg>
-                </a>
-              </li>
-              <li>
-                <a href="" class="social-link">
-                  <svg><use href="img/icon.svg#phone"></use></svg>
-                </a>
-              </li>
-            </ul>
-          </nav>
+          <ul class="social">
+            <li>
+              <a href="https://github.com/AbdurakhimovAziz" class="social-link" target="blank">
+                <svg><use href="img/icon.svg#github"></use></svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://t.me//Aziz151002" class="social-link" target="blank">
+                <svg><use href="img/icon.svg#telegram"></use></svg>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:aziz.abdurahimov151002@gmail.com" class="social-link">
+                <svg><use href="img/icon.svg#gmail"></use></svg>
+              </a>
+            </li>
+            <li>
+              <a href="tel:+998909868141" class="social-link">
+                <svg><use href="img/icon.svg#phone"></use></svg>
+              </a>
+            </li>
+          </ul>
         </div>
       </footer>
     </div>
