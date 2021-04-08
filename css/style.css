@@ -1,0 +1,294 @@
+:root {
+  --primary-color: #454b53;
+  --secondary-color: #4a89dc;
+  --ease-out-back: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+*,
+*:after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--primary-color);
+  background-color: #f5f7fa;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 1210px;
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.about,
+.skills,
+.experience,
+.education,
+.contacts {
+  padding: 50px 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-top: 35px;
+  padding-bottom: 35px;
+
+  font-size: 20px;
+}
+
+.name {
+  font-size: 22px;
+}
+
+.menu-list {
+  display: flex;
+}
+
+.menu-list-item {
+  position: relative;
+  padding-bottom: 8px;
+  text-transform: lowercase;
+}
+
+.menu-list-item + .menu-list-item {
+  margin-left: 20px;
+}
+
+.menu-list-item:before,
+.menu-list-item:after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: var(--secondary-color);
+}
+
+.menu-list-item:before {
+  opacity: 0;
+  transform: translateY(-8px);
+  transition: transform 0s var(--ease-out-back), opacity 0s;
+}
+
+.menu-list-item:after {
+  opacity: 0;
+  transform: translateY(8px/2);
+  transition: transform 0.2s var(--ease-out-back), opacity 0.2s;
+}
+
+.menu-list-item:hover::after,
+.menu-list-item:focus::before,
+.menu-list-item:hover::before,
+.menu-list-item:focus::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+.menu-list-item:hover::before {
+  transition: transform 0.2s var(--ease-out-back), opacity 0.2s;
+}
+.menu-list-item:hover::after {
+  transition: transform 0s 0.2s var(--ease-out-back), opacity 0s 0.2s;
+}
+
+.content {
+  flex-grow: 1;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 1px var(--primary-color);
+}
+
+.container {
+  max-width: 1110px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.info {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 40px 0;
+  background-color: var(--secondary-color);
+}
+
+.info-inner {
+  display: flex;
+  align-items: center;
+}
+
+.info-content {
+  color: #fff;
+}
+
+.info-img {
+  width: 200px;
+  height: 200px;
+  margin-right: 100px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.info-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.info-title {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.info-text {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.heading {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 8px;
+  margin-bottom: 30px;
+}
+.heading::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 3px;
+  border-radius: 5px;
+  background-color: var(--secondary-color);
+}
+
+.list {
+  list-style: disc inside;
+  margin-bottom: 50px;
+}
+
+.list li {
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+
+.list li::marker {
+  color: var(--secondary-color);
+}
+
+.subheading {
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.code {
+  background-color: #eeeeee;
+  border-radius: 3px;
+}
+.code-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.projects-title {
+  margin: 30px 0 10px;
+}
+
+.projects {
+  padding-left: 30px;
+  list-style: decimal;
+}
+.projects li {
+  margin-bottom: 10px;
+}
+
+.link {
+  color: var(--secondary-color);
+  transition: color 0.3s ease-out;
+}
+
+.link:hover,
+.link:active,
+.link:visited {
+  color: #0058cc;
+}
+
+.contacts-item span {
+  font-weight: 700;
+  margin-right: 5px;
+}
+
+.footer {
+  padding: 100px 0 20px;
+  text-align: center;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.info-social {
+  justify-content: start;
+}
+
+.social-link {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s var(--ease-out-back);
+}
+
+.social-link:hover {
+  transform: scale(1.2);
+}
+
+.social li {
+  margin-right: 20px;
+}
+
+.social-link svg {
+  fill: #fff;
+  width: 100%;
+  height: 100%;
+}
