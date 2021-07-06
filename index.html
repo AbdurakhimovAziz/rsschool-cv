@@ -28,7 +28,7 @@
       <section id="info" class="info">
         <div class="container">
           <div class="info-inner">
-            <figure class="info-img"><img src="img/main-img.jpg" alt="avatar photo" /></figure>
+            <figure class="info-img"><img src="img/avatar.svg" alt="avatar photo" /></figure>
             <div class="info-content">
               <h1 class="info-title">Aziz Abdurakhimov</h1>
               <p class="info-text">Frontend developer</p>
@@ -71,7 +71,7 @@
           <h2 class="heading">About me</h2>
           <p>
             I am a self-taught and ambitious person with a great interest in Frontend development. I am currently a
-            first year stundent in BA of Computer Science and Engineering. I have excellent
+            second year student in BA of Computer Science and Engineering. I have excellent
             problem solving skills and strong IT skills. I am eager to learn and love challenging problems that help me
             to improve my technical skills.
           </p>
@@ -81,22 +81,28 @@
         <div class="container">
           <h2 class="heading">My skills</h2>
           <ul class="list">
-            <li>HTML/CSS</li>
+            <li>HTML, CSS</li>
             <li>BEM</li>
-            <li>Sass/Scss</li>
-            <li>Bootstrap</li>
-            <li>Javascript</li>
-            <li>Git/GitHub</li>
-            <li>Responsive layouts</li>
+            <li>Sass, Bootstrap</li>
+            <li>Javascript, Typescript</li>
+            <li>Webpack</li>
+            <li>React, Redux</li>
+            <li>Photoshop, Figma</li>
           </ul>
           <article>
             <h3 class="subheading">Code Sample</h3>
-            <p class="code-title">Javascript code:</p>
+            <p class="code-title">JSX code:</p>
             <pre class="code"><code>
-                burger.addEventListener('click', e => {
-                e.stopPropagation();
-                toggleClass();
-                });</code></pre>
+  const clickHandler = () => {
+    console.log('clicked!');
+  }
+    
+  const btn = &ltButton text="Click me!" onClick={clickHandler} /&gt; 
+    
+  const Button = ({ text, onclick }) => {
+    return &ltbutton onClick={onClick}&gt{text}&lt/button&gt
+  }
+            </code></pre>
           </article>
         </div>
       </section>
@@ -104,12 +110,33 @@
         <div class="container">
           <h2 class="heading">Experience</h2>
           <p>No working/commercial experience</p>
-          <h3 class="subheading projects-title">Some educational projects</h3>
-          <ol class="projects">
-            <li><a class="link" href="https://abdurakhimovaziz.github.io/agency_business/">Business Agency website</a>
-            </li>
-            <li><a class="link" href="https://abdurakhimovaziz.github.io/yoyo_bycicle/">Bycicle website</a></li>
-          </ol>
+          <section>
+            <h3 class="subheading projects-title">Rolling Scopes School projects</h3>
+            <ol class="projects">
+              <li><a class="link"
+                  href="https://rolling-scopes-school.github.io/abdurakhimovaziz-JSFE2021Q1/match-match-game/"
+                  target="_blank">Match-match game</a>
+              </li>
+              <li><a class="link"
+                  href="https://rolling-scopes-school.github.io/abdurakhimovaziz-JSFE2021Q1/photo-filter/"
+                  target="_blank">Photo filter</a></li>
+              <li><a class="link"
+                  href="https://rolling-scopes-school.github.io/abdurakhimovaziz-JSFE2021Q1/virtual-piano/"
+                  target="_blank">Virtual
+                  piano</a></li>
+              <li><a class="link" href="https://rolling-scopes-school.github.io/abdurakhimovaziz-JSFE2021Q1/online-zoo/"
+                  target="_blank">Online-zoo </a>
+              </li>
+            </ol>
+          </section>
+          <section>
+            <h3 class="subheading projects-title">Educational projects</h3>
+            <ol class="projects">
+              <li><a class="link" href="https://abdurakhimovaziz.github.io/agency_business/">Business Agency website</a>
+              </li>
+              <li><a class="link" href="https://abdurakhimovaziz.github.io/yoyo_bicycle/">Bicycle website</a></li>
+            </ol>
+          </section>
         </div>
       </section>
       <section id="education" class="education">
@@ -120,7 +147,6 @@
             <li>Freecodecamp</li>
             <li>Udemy (web-developer bootcamp, javascript from novice to ninja)</li>
             <li>Coursera (html css and js for web developers)</li>
-            <li>Udacity (fullstack web developer)</li>
           </ul>
         </div>
       </section>
