@@ -59,7 +59,7 @@ body {
 
 .about,
 .skills,
-.experience,
+.projects,
 .education,
 .contacts {
   padding: 50px 0;
@@ -207,6 +207,14 @@ body {
   margin-bottom: 50px;
 }
 
+.list-subheading {
+  display: inline-block;
+}
+
+.list-subheading span {
+  font-weight: normal;
+}
+
 .list li {
   padding-left: 30px;
   margin-bottom: 10px;
@@ -221,21 +229,11 @@ body {
   font-size: 22px;
 }
 
-.code {
-  background-color: #eeeeee;
-  border-radius: 3px;
-  overflow: auto;
-}
-.code-title {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
 .projects-title {
   margin: 30px 0 10px;
 }
 
-.projects {
+.projects-list {
   padding-left: 30px;
   list-style: decimal;
 }
@@ -309,6 +307,9 @@ body {
   .heading {
     font-size: 24px;
   }
+  .subheading {
+    font-size: 20px;
+  }
   .info-img {
     width: 150px;
     height: 150px;
@@ -323,9 +324,15 @@ body {
   .heading {
     font-size: 20px;
   }
+  .container {
+    padding: 0 15px;
+  }
+  .subheading {
+    font-size: 16px;
+  }
   .about,
   .skills,
-  .experience,
+  .projects,
   .education,
   .contacts {
     padding: 30px 0;
@@ -351,6 +358,9 @@ body {
   }
   .info-text {
     font-size: 14px;
+  }
+  .list li {
+    padding-left: 10px;
   }
   .social li {
     margin-right: 10px;
